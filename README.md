@@ -1,2 +1,3 @@
-**Chore Charts and Cognitive Development**
-An interactive educational website built with **HTML, CSS, and JavaScript** that demonstrates how age-appropriate chore charts promote children's cognitive development, responsibility, independence, and time management. The application features a responsive design, educational content, and a dynamic chore chart generator that creates personalized chore recommendations based on a child's age.
+# Chore Charts and Cognitive Development
+
+An interactive educational website built with HTML, CSS, and JavaScript. It explains how age-appropriate chores can help children develop responsibility, independence, teamwork, time-management skills, and cognitive abilities. The project includes a responsive interface, cited educational content, and a browser-based chore chart generator that creates and saves personalized recommendations using local storage.

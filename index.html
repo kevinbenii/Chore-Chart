@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="An interactive educational website exploring how age-appropriate chores can support responsibility, independence, and cognitive development in children and adolescents."
+  />
+  <meta name="author" content="Kevin Beni" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <title>Chore Charts and Cognitive Development</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- =========================
+       Site Header and Hero
+  ========================== -->
+  <header class="site-header hero" aria-labelledby="page-title">
+    <div class="container hero-content">
+      <p class="eyebrow">Senior Mastery Project</p>
+
+      <h1 id="page-title">Chore Charts and Cognitive Development</h1>
+
+      <p class="subtitle">
+        An interactive educational website that explains how age-appropriate chores can foster responsibility,
+        teamwork, independence, and cognitive development in children and teens.
+      </p>
+
+      <ul class="technology-list" aria-label="Technologies and project features">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>Local Storage</li>
+      </ul>
+
+      <div class="hero-actions" aria-label="Featured project links">
+        <a class="btn btn-primary" href="#generator">Try the Generator</a>
+        <span class="link-separator" aria-hidden="true">|</span>
+        <a class="btn btn-secondary" href="#sources">View Sources</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================
+       Primary Navigation
+  ========================== -->
+  <nav class="site-navigation" aria-label="Primary navigation">
+    <ul class="container nav-inner">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#why-it-matters">Why It Matters</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#age-guide">Age Guide</a></li>
+      <li><a href="#theory">Theory</a></li>
+      <li><a href="#family-strategies">Family Strategies</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#generator">Chart Generator</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ul>
+  </nav>
+
+  <!-- =========================
+       Main Content
+  ========================== -->
+  <main id="main-content" class="container site-main">
+
+    <!-- Project Overview -->
+    <section id="overview" class="card reveal" aria-labelledby="overview-title">
+      <div class="section-heading">
+        <p class="section-kicker">About the Project</p>
+        <h2 id="overview-title">Project Overview</h2>
+      </div>
+
+      <p>
+        This website presents chore charts as practical tools for building lifelong skills. Resources on child development and pediatric care explain that age-appropriate chores can help children practice responsibility,
+        organization, time management, and independence. The American Academy of Child and Adolescent Psychiatry
+        (AACAP) notes that children can begin helping with simple chores as early as age three.
+        <a class="citation" href="#source-1" aria-label="See source 1">[1]</a>
+        <a class="citation" href="#source-2" aria-label="See source 2">[2]</a>
+      </p>
+
+      <p>
+        The project combines educational content with an interactive chore chart generator. Users can learn about
+        child development while creating personalized chore suggestions based on age. The application demonstrates
+        front-end development skills through semantic HTML, responsive CSS, JavaScript, DOM manipulation, input
+        validation, and browser-based local storage.
+      </p>
+    </section>
+
+    <!-- Why Chores Matter -->
+    <section id="why-it-matters" class="card reveal" aria-labelledby="importance-title">
+      <div class="section-heading">
+        <p class="section-kicker">Development and Responsibility</p>
+        <h2 id="importance-title">Why Chores Matter</h2>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <p>
+            Chores provide children with a structured way to practice real-life responsibility. AACAP reports that children
+            who participate in chores may develop greater self-esteem and responsibility and may be better prepared
+            to manage frustration, adversity, and delayed gratification.
+            <a class="citation" href="#source-1" aria-label="See source 1">[1]</a>
+          </p>
+
+          <p>
+            HealthyChildren.org explains that helping at home can teach children life skills, cooperation, and how to
+            contribute to a group. It also recommends praising effort rather than expecting perfection while children
+            are learning.
+            <a class="citation" href="#source-2" aria-label="See source 2">[2]</a>
+          </p>
+        </div>
+
+        <aside class="callout" aria-label="Key guidance">
+          <h3>Build skills gradually</h3>
+          <p>
+            Children are more likely to succeed when adults provide clear expectations, consistent routines,
+            age-appropriate tasks, patient instruction, and positive feedback. Chores can become more complex as a
+            child’s skills and confidence grow.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="card reveal" aria-labelledby="benefits-title">
+      <div class="section-heading">
+        <p class="section-kicker">Learning Outcomes</p>
+        <h2 id="benefits-title">Key Benefits of Chore Charts</h2>
+      </div>
+
+      <div class="two-col">
+        <ul class="highlight-list">
+          <li><strong>Promotes teamwork:</strong> Encourages children to contribute to a shared family routine.</li>
+          <li><strong>Builds responsibility:</strong> Helps children understand ownership and follow-through.</li>
+          <li><strong>Improves time management:</strong> Reinforces planning, prioritization, and consistent follow-through.</li>
+          <li><strong>Supports independence:</strong> Prepares children to function more confidently on their own.</li>
+        </ul>
+
+        <ul class="highlight-list">
+          <li><strong>Develops resilience:</strong> Teaches children to learn from mistakes and try again.</li>
+          <li><strong>Creates healthy habits:</strong> Builds discipline and organization over time.</li>
+          <li><strong>Supports self-esteem:</strong> Creates opportunities for accomplishment and meaningful contribution.</li>
+          <li><strong>Builds life skills:</strong> Helps children practice abilities they can use in school, at work, and in independent living.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- How the Website Works -->
+    <section id="how-it-works" class="card reveal" aria-labelledby="process-title">
+      <div class="section-heading">
+        <p class="section-kicker">User Experience</p>
+        <h2 id="process-title">How the Website Works</h2>
+      </div>
+
+      <ol class="process-grid">
+        <li class="callout process-card">
+          <div class="process-card-heading">
+            <span class="step-number" aria-hidden="true">01</span>
+            <h3>Learn</h3>
+          </div>
+          <p>Read educational sections about chores, family routines, developmental skills, and cognitive development.</p>
+        </li>
+
+        <li class="callout process-card">
+          <div class="process-card-heading">
+            <span class="step-number" aria-hidden="true">02</span>
+            <h3>Enter Information</h3>
+          </div>
+          <p>Enter a child’s name and age using the accessible chore chart form.</p>
+        </li>
+
+        <li class="callout process-card">
+          <div class="process-card-heading">
+            <span class="step-number" aria-hidden="true">03</span>
+            <h3>Generate and Save</h3>
+          </div>
+          <p>JavaScript uses the child’s age to select an appropriate chore group, displays the chart, and saves it to the browser’s local storage.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Age Guide -->
+    <section id="age-guide" class="card reveal" aria-labelledby="age-guide-title">
+      <div class="section-heading">
+        <p class="section-kicker">Age-Appropriate Tasks</p>
+        <h2 id="age-guide-title">Age-Specific Chore Recommendations</h2>
+      </div>
+
+      <p class="muted">
+        Chores should grow with a child’s abilities. Early tasks should be short, simple, and supervised, while older
+        children can manage tasks with more steps, greater responsibility, and more independence. The examples below
+        are general suggestions; adults should also consider each child’s maturity, abilities, and safety needs.
+        <a class="citation" href="#source-1" aria-label="See source 1">[1]</a>
+        <a class="citation" href="#source-2" aria-label="See source 2">[2]</a>
+      </p>
+
+      <div class="age-grid">
+        <article class="age-box">
+          <h3 class="age-title">Ages 2–4: Learning Responsibility</h3>
+          <p>
+            Young children are beginning to understand routines, simple directions, and cause-and-effect relationships.
+            Tasks should be playful, brief, and completed with close adult support.
+          </p>
+          <ul>
+            <li><strong>Put away toys</strong> — Encourages organization and teaches children to clean up after an activity.</li>
+            <li><strong>Help set the table</strong> — Helps children practice following directions, counting, and hand-eye coordination.</li>
+            <li><strong>Wipe up small spills</strong> — Introduces responsibility and supports basic motor control.</li>
+            <li><strong>Place clothes in a hamper</strong> — Reinforces daily routines and growing independence.</li>
+            <li><strong>Water plants with assistance</strong> — Encourages care, patience, and attention to a simple task.</li>
+          </ul>
+        </article>
+
+        <article class="age-box">
+          <h3 class="age-title">Ages 5–7: Building Independence</h3>
+          <p>
+            Children can complete short routines with less assistance. Clear instructions and positive feedback help them
+            feel capable and proud of their contributions.
+          </p>
+          <ul>
+            <li><strong>Make the bed</strong> — Builds responsibility and supports a productive morning routine.</li>
+            <li><strong>Feed pets</strong> — Encourages empathy, consistency, and care for another living thing.</li>
+            <li><strong>Help with light dusting</strong> — Strengthens teamwork and awareness of household cleanliness.</li>
+            <li><strong>Sort laundry by color</strong> — Supports categorization and early problem-solving.</li>
+            <li><strong>Organize books or school supplies</strong> — Develops organizational skills and ownership of personal belongings.</li>
+          </ul>
+        </article>
+
+        <article class="age-box">
+          <h3 class="age-title">Ages 8–10: Developing Organizational Skills</h3>
+          <p>
+            At this age, children can follow multistep instructions and complete many tasks with less supervision. These
+            chores strengthen sequencing, responsibility, and planning skills.
+          </p>
+          <ul>
+            <li><strong>Take out the trash</strong> — Promotes accountability and reinforces a household routine.</li>
+            <li><strong>Help with laundry</strong> — Introduces sequencing and basic household management.</li>
+            <li><strong>Sweep the floor</strong> — Builds persistence and attention to detail.</li>
+            <li><strong>Pack a school lunch</strong> — Supports planning and decision-making.</li>
+            <li><strong>Unload safe items from the dishwasher</strong> — Develops organization and awareness of household safety.</li>
+          </ul>
+        </article>
+
+        <article class="age-box">
+          <h3 class="age-title">Ages 11–13: Strengthening Responsibility</h3>
+          <p>
+            Preteens are ready for chores that require more attention, time, and independence. Adults should continue to
+            teach safe methods and check progress when necessary.
+          </p>
+          <ul>
+            <li><strong>Wash dishes</strong> — Teaches responsibility, care for shared spaces, and follow-through.</li>
+            <li><strong>Vacuum rooms</strong> — Reinforces consistency and quality of work.</li>
+            <li><strong>Clean the bathroom</strong> — Builds hygiene awareness and accountability.</li>
+            <li><strong>Prepare a simple breakfast or snack</strong> — Introduces basic food preparation and kitchen safety.</li>
+            <li><strong>Help care for younger siblings under adult supervision</strong> — Encourages leadership, empathy, and patience.</li>
+          </ul>
+        </article>
+
+        <article class="age-box">
+          <h3 class="age-title">Ages 14–16: Practicing Independence</h3>
+          <p>
+            Teenagers can manage more advanced household responsibilities and begin practicing the routines they may need
+            as independent young adults.
+          </p>
+          <ul>
+            <li><strong>Prepare simple meals</strong> — Builds cooking and planning skills and knowledge of nutrition.</li>
+            <li><strong>Mow the lawn safely</strong> — Develops responsibility and awareness of equipment safety.</li>
+            <li><strong>Do laundry independently</strong> — Strengthens self-sufficiency.</li>
+            <li><strong>Create a cleaning schedule</strong> — Improves time management and organization.</li>
+            <li><strong>Wash the family vehicle</strong> — Teaches persistence while completing a detailed task.</li>
+          </ul>
+        </article>
+
+        <article class="age-box">
+          <h3 class="age-title">Ages 17–18: Preparing for Adulthood</h3>
+          <p>
+            Older teens can benefit from practicing responsibilities related to college, employment, budgeting, and
+            independent living.
+          </p>
+          <ul>
+            <li><strong>Manage weekly groceries</strong> — Develops budgeting, planning, and organizational skills.</li>
+            <li><strong>Plan family meals</strong> — Strengthens leadership and nutrition awareness.</li>
+            <li><strong>Handle minor repairs with guidance</strong> — Builds practical problem-solving skills and confidence with basic home maintenance.</li>
+            <li><strong>Create a household budget</strong> — Introduces financial planning and responsibility.</li>
+            <li><strong>Schedule appointments</strong> — Prepares teens to manage their own commitments and responsibilities.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cognitive Development Theory -->
+    <section id="theory" class="card reveal" aria-labelledby="theory-title">
+      <div class="section-heading">
+        <p class="section-kicker">Developmental Framework</p>
+        <h2 id="theory-title">Chores and Piaget’s Cognitive Development Theory</h2>
+      </div>
+
+      <p>
+        Piaget’s theory describes four broad stages of cognitive development. Children progress from learning through
+        their senses and actions to using symbolic thought, concrete logic, and, eventually, abstract reasoning. The
+        stages offer a useful framework, but development varies; the age ranges should not be treated as rigid rules.
+        <a class="citation" href="#source-4" aria-label="See source 4">[4]</a>
+        <a class="citation" href="#source-5" aria-label="See source 5">[5]</a>
+      </p>
+
+      <div class="stage-grid">
+        <article class="callout stage-card">
+          <p class="stage-number">Stage 1</p>
+          <h3>Sensorimotor</h3>
+          <p class="stage-age">Birth–2 years</p>
+          <p>Children learn through their senses, movement, and direct interaction with the environment.</p>
+        </article>
+
+        <article class="callout stage-card">
+          <p class="stage-number">Stage 2</p>
+          <h3>Preoperational</h3>
+          <p class="stage-age">Ages 2–7</p>
+          <p>Children begin using symbolic thought and can follow simple, concrete steps.</p>
+        </article>
+
+        <article class="callout stage-card">
+          <p class="stage-number">Stage 3</p>
+          <h3>Concrete Operational</h3>
+          <p class="stage-age">Ages 7–11</p>
+          <p>Children use increasingly logical and organized thinking to understand concrete events.</p>
+        </article>
+
+        <article class="callout stage-card">
+          <p class="stage-number">Stage 4</p>
+          <h3>Formal Operational</h3>
+          <p class="stage-age">Ages 12 and older</p>
+          <p>Adolescents develop abstract reasoning, planning skills, and more complex problem-solving abilities.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Family Strategies -->
+    <section id="family-strategies" class="card reveal" aria-labelledby="strategies-title">
+      <div class="section-heading">
+        <p class="section-kicker">Supporting Success</p>
+        <h2 id="strategies-title">Family Strategies and Routines</h2>
+      </div>
+
+      <div class="strategy-grid">
+        <article class="callout">
+          <h3>Set clear expectations</h3>
+          <p>Explain exactly what needs to be done, demonstrate the task, and specify when it should be completed.</p>
+        </article>
+
+        <article class="callout">
+          <h3>Use encouragement</h3>
+          <p>Praise effort and progress rather than demanding perfection while a child is learning.</p>
+        </article>
+
+        <article class="callout">
+          <h3>Keep tasks realistic</h3>
+          <p>Match each chore to the child’s age, abilities, attention span, and safety needs.</p>
+        </article>
+
+        <article class="callout">
+          <h3>Build consistent routines</h3>
+          <p>Use predictable times, visual reminders, checklists, or a chore chart to support memory and organization.</p>
+        </article>
+
+        <article class="callout">
+          <h3>Introduce one task at a time</h3>
+          <p>Avoid overwhelming children with a long list. Add responsibilities as their skills and confidence improve.</p>
+        </article>
+
+        <article class="callout">
+          <h3>Encourage collaboration</h3>
+          <p>
+            Shared calendars, family meetings, and age-appropriate chores can support communication, teamwork, and
+            self-sufficiency.
+            <a class="citation" href="#source-3" aria-label="See source 3">[3]</a>
+          </p>
+        </article>
+      </div>
+
+      <p class="source-note">
+        These strategies reflect guidance from AACAP and HealthyChildren.org about clear expectations, consistent
+        routines, manageable tasks, appropriate supervision, and positive reinforcement.
+        <a class="citation" href="#source-1" aria-label="See source 1">[1]</a>
+        <a class="citation" href="#source-2" aria-label="See source 2">[2]</a>
+      </p>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section id="faq" class="card reveal faq" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <p class="section-kicker">Common Questions</p>
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+      </div>
+
+      <details>
+        <summary>Why are chores helpful for children?</summary>
+        <p>
+          Chores provide repeated opportunities to practice responsibility, organization, cooperation, time management,
+          and independence. They also allow children to see how their contributions help the household.
+        </p>
+      </details>
+
+      <details>
+        <summary>How should caregivers introduce chores?</summary>
+        <p>
+          Start with one small, age-appropriate task. Explain and demonstrate it clearly, provide supervision as needed,
+          establish a consistent routine, and recognize effort and improvement.
+        </p>
+      </details>
+
+      <details>
+        <summary>How does this connect to cognitive development?</summary>
+        <p>
+          Completing chores can require children to remember instructions, arrange steps in order, solve simple problems,
+          manage time, make decisions, and evaluate whether a task is complete.
+        </p>
+      </details>
+
+      <details>
+        <summary>Should children receive an allowance for chores?</summary>
+        <p>
+          Families take different approaches to allowances. Some families treat routine chores as a basic responsibility
+          and reserve payment for additional work. Whatever approach a family chooses, expectations should be clear
+          and consistent.
+        </p>
+      </details>
+
+      <details>
+        <summary>What if a child refuses to complete a chore?</summary>
+        <p>
+          First, check whether the task is clearly explained, manageable, safe, and appropriate for the child. Offer
+          guidance, keep routines consistent, and use reasonable consequences rather than repeated criticism. If
+          difficulties persist, families may wish to consult a pediatrician or another qualified professional.
+        </p>
+      </details>
+    </section>
+
+    <!-- Interactive Generator -->
+    <section id="generator" class="card reveal" aria-labelledby="generator-title">
+      <div class="section-heading">
+        <p class="section-kicker">Interactive Application</p>
+        <h2 id="generator-title">Chore Chart Generator</h2>
+      </div>
+
+      <p class="muted">
+        Enter a child’s name and age to generate a personalized list of age-appropriate chores. Saved charts
+        remain in this browser until you remove them or clear the browser’s local storage.
+      </p>
+
+      <div class="form-shell">
+        <div class="form-card">
+          <form id="choreForm">
+            <div class="form-group">
+              <label for="name">Child’s Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter a name"
+                autocomplete="name"
+                maxlength="40"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="age">Child’s Age</label>
+              <input
+                id="age"
+                name="age"
+                type="number"
+                min="2"
+                max="18"
+                step="1"
+                inputmode="numeric"
+                placeholder="Enter an age from 2 to 18"
+                required
+              />
+            </div>
+
+            <div class="button-row">
+              <button type="submit" class="btn btn-primary">Add to Chart</button>
+              <button type="button" id="clearBtn" class="btn btn-secondary">Clear All</button>
+              <button type="button" id="printBtn" class="btn btn-secondary">Print Charts</button>
+            </div>
+          </form>
+
+          <p class="input-note">
+            The suggestions are educational examples. Adults should adjust each chore to account for the child’s maturity,
+            abilities, supervision needs, and the safety requirements of the task.
+          </p>
+        </div>
+
+        <div class="chart-shell" role="region" aria-label="Generated chore charts" aria-live="polite">
+          <div id="chartOutput" class="empty-state">No children have been added yet.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Learning -->
+    <section id="technical-learning" class="card reveal" aria-labelledby="technical-title">
+      <div class="section-heading">
+        <p class="section-kicker">Programming Skills</p>
+        <h2 id="technical-title">What the Interactive Generator Demonstrates</h2>
+      </div>
+
+      <div class="tri-col">
+        <article class="callout">
+          <h3>Conditional Logic</h3>
+          <p>JavaScript uses a child’s age to select an age-appropriate chore group.</p>
+        </article>
+
+        <article class="callout">
+          <h3>DOM Manipulation</h3>
+          <p>The application creates, updates, and removes chart elements without reloading the page.</p>
+        </article>
+
+        <article class="callout">
+          <h3>Local Storage</h3>
+          <p>Generated charts are stored in the browser so they remain available after the page is reopened.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sources -->
+    <section id="sources" class="card reveal" aria-labelledby="sources-title">
+      <div class="section-heading">
+        <p class="section-kicker">Research and Guidance</p>
+        <h2 id="sources-title">Sources</h2>
+      </div>
+
+      <p class="muted">
+        The educational content on this website was informed by the following resources. External links open in a new browser tab.
+      </p>
+
+      <ol class="source-list">
+        <li id="source-1">
+          <cite>
+            <a
+              href="https://www.aacap.org/AACAP/Families_and_Youth/Facts_for_Families/FFF-Guide/Chores_and_Children-125.aspx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >American Academy of Child and Adolescent Psychiatry: “Chores and Children”</a>
+          </cite>
+        </li>
+
+        <li id="source-2">
+          <cite>
+            <a
+              href="https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/Chores-and-Responsibility.aspx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >HealthyChildren.org: “Age-Appropriate Chores for Children”</a>
+          </cite>
+        </li>
+
+        <li id="source-3">
+          <cite>
+            <a
+              href="https://www.verywellmind.com/how-growing-up-in-a-big-family-shapes-development-8680699"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Verywell Mind: “How Growing Up in a Big Family Shapes Your Development”</a>
+          </cite>
+        </li>
+
+        <li id="source-4">
+          <cite>
+            <a
+              href="https://www.ncbi.nlm.nih.gov/books/NBK537095/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >NCBI Bookshelf: “Cognitive Development”</a>
+          </cite>
+        </li>
+
+        <li id="source-5">
+          <cite>
+            <a
+              href="https://www.verywellmind.com/piagets-stages-of-cognitive-development-2795457"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Verywell Mind: “Piaget’s 4 Stages of Cognitive Development Explained”</a>
+          </cite>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- =========================
+       Site Footer
+  ========================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Senior Mastery Project</strong> — Designed and developed by Kevin Beni.</p>
+      <p>Empowering children to grow through structured responsibility, one chore at a time.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
